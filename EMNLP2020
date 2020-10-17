@@ -1,10 +1,82 @@
-# keyword 
-# Active Learning
+# open domain이 핫하군?!
+Keyword: active learning / incremental learning / self-supervised / domain adaptation / self-training / Distillation /wasserstein / augmentation/ weak / semi /self
 
-* Active Learning for BERT: An Empirical Study.
+# keyword: Active Learning
+
+(unavailable)* Active Learning for BERT: An Empirical Study.
 Liat Ein-Dor, Alon Halfon, Ariel Gera, Eyal Shnarch, Lena Dankin, Leshem Choshen, Marina Danilevsky, Ranit Aharonov, Yoav Katz and Noam Slonim.
 !still publicly unavailable
 
 *ALICE: Active Learning with Contrastive Natural Language Explanations
 Weixin Liang, James Zou and Zhou Yu.
+https://arxiv.org/pdf/2009.10259.pdf
+abstract summary: ALICE learns to first use active learning to select the most informative pairs of label classes
+to elicit contrastive natural language explanations from experts. Then it extracts knowledge from these explanations using a semantic parser. Finally, it incorporates the extracted
+knowledge through dynamically changing the learning model’s structure.
+- flow
+(A) Class-based Active Learning: ALICE first projects each class’s training data into a shared feature space. Then ALICE selects b most confusing class pairs to query domain experts for
+explanations. (B) Semantic Explanation Grounding: ALICE then extracts knowledge from b contrastive natural language
+explanations by semantic parsing. ALICE grounds the extracted knowledge on the training data of b class pairs by cropping the
+corresponding semantic segments. (C) Neural Architecture Morphing: ALICE finally allocates b new local classifiers and
+merges b class pairs in the global classifier. The cropped image patches are used as additional training data for a newly added
+local classifier to emphasize these patches’ importance.
+- my summary
+-> query 알고리즘이 아님
+-> Class-based Active Learning에서 분류기를 통해 shared feature를 학습하고, confusing class pair를 뽑음
+-> Semantic Explanation Grounding이라는 과정과 Neural Architecture Morphing이 추가적으로 합쳐진 프레임웍임
+-> semantic parsing 을 통해 knowledge를 추출, 그걸 통해 grounded patch를 segmentation으로 생성
+-> 추가 학습 시 local  classifier를 attention이랑 여차저차 하는듯..?
+-> 이거랑 별개로 attention을 정복하자 ㅠㅠ
 
+(unavailable)* Cold-start active learning through self-supervised language modeling
+!still publicly unavailable
+- my summary
+-> language model기반으로 AL하는게 꽤 많은듯...? (BERT 기반도 그렇고)
+
+- similar paper
+Do Not Have Enough Data? Deep Learning to the Rescue! (AAAI2020)
+https://arxiv.org/pdf/1911.03118.pdf
+Based on recent advances in natural language modeling and those in text generation capabilities, we propose a novel data
+augmentation method for text classification tasks. We use a powerful pre-trained neural network model to artificially synthesize new labeled data for supervised learning
+- my summary
+-> augmentation 논문
+-> ATIS 같은거로 측정함
+-> 읽어보자 
+
+*** SeqMix: Augmenting Active Sequence Labeling via Sequence Mixup.
+https://arxiv.org/pdf/2010.02322.pdf
+We propose SeqMix, a data augmentation method for generating sub-sequences along with
+their labels based on mixup. Under the active sequence labeling framework, SeqMix is capable of generating plausible pseudo
+labeled sequences for the queried samples in each iteration.
+- my Summary
+-> active learning with data augmentation based on mixup
+-> mixup에 대한 다양한 조건 / whole embedding or subsequence..
+-> mixup samples / discriminator judge whether samples is plausible or not by perplexity scores for all candidates sample
+-> 저자 홈페이지 여기서 Learning from weak/noisy supervision 꽤 흥미로움 http://chaozhang.org/
+(Text Classification Using Label Names Only: A Language Model Self-Training Approach 이거도 재밌어보임)
+-> nonlinear mixup 이랑 뭔가 해볼수도?!
+-> mixup + active learning: Neural Networks Are More Productive Teachers Than Human Raters:
+Active Mixup for Data-Efficient Knowledge Distillation from a Blackbox Model
+/ COMBINING MIXMATCH AND ACTIVE LEARNING FOR BETTER ACCURACY WITH FEWER LABELS
+-> mixup 해보고싶당 .. semi supervised나  active learning
+-> 이 논문은 다 읽어보자!
+
+(unavailable)* Learning Structured Representations of Entity Names using Active Learning and Weak Supervision.
+!still publicly unavailable
+
+# keyword: self 
+(unavailable)Combining Self-Training and Self-Supervised Learning for Unsupervised Disfluency Detection.
+-> 이전 연구: Multi-Task Self-Supervised Learning for Disfluency Detection
+
+Adversarial Self-Supervised Data Free Distillation for Text Classification.
+-> large pretrained LM의 original dataset access 불가능하다는 점에서 시작
+-  Adversarial self-Supervised Data-Free Distillation, embedding guess, self-supervised module
+
+(unavailable) Affective Event Classification with Discourse-enhanced Self-training
+
+
+# keyword: domain adaptation
+Feature Adaptation of Pre-Trained Language Models across Languages and Domains with Robust Self-Training
+https://arxiv.org/pdf/2009.11538.pdf
+-> unsupervised domain adaptation
+-> self training with class-aware feature self=distillation
