@@ -1,0 +1,9 @@
+# framework for clustering and selecting new class
+1. clustering new class from whole dataset (범위 정하기)
+2. 1에서 규정된 범위 안에서 데이터를 어떻게 고를건지 
+   -> 범위 내의 submodularity
+   -> main set 규정
+   -> uncertainty
+related work: apple에서 낸 KNN기반으로 new class 고르는거 (Active Learning for Domain Classification in a Commercial Spoken Personal Assistant)
+point) two stage? or jointly?
+
