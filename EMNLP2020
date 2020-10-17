@@ -69,6 +69,9 @@ Active Mixup for Data-Efficient Knowledge Distillation from a Blackbox Model
 (unavailable)Combining Self-Training and Self-Supervised Learning for Unsupervised Disfluency Detection.
 -> 이전 연구: Multi-Task Self-Supervised Learning for Disfluency Detection
 
+#TODO: semi and weak
+#TODO: 어떤 아이디어를 추가할지 생각해보자!
+
 Adversarial Self-Supervised Data Free Distillation for Text Classification.
 -> large pretrained LM의 original dataset access 불가능하다는 점에서 시작
 -  Adversarial self-Supervised Data-Free Distillation, embedding guess, self-supervised module
