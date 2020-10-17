@@ -1,4 +1,5 @@
-# open domain이 핫하군?!
+# open domain이 핫하군?! self-supervised..
+
 Keyword: active learning / incremental learning / self-supervised / domain adaptation / self-training / Distillation /wasserstein / augmentation/ weak / semi /self
 
 # keyword: Active Learning
@@ -74,9 +75,18 @@ Adversarial Self-Supervised Data Free Distillation for Text Classification.
 
 (unavailable) Affective Event Classification with Discourse-enhanced Self-training
 
+Unsupervised Adaptation of Question Answering Systems via Generative Self-training. 
+
+
+# keyword: incremental
+A Multi-Task Incremental Learning Framework with Category Name Embedding for Aspect-Category Sentiment Analysis
 
 # keyword: domain adaptation
 Feature Adaptation of Pre-Trained Language Models across Languages and Domains with Robust Self-Training
 https://arxiv.org/pdf/2009.11538.pdf
 -> unsupervised domain adaptation
 -> self training with class-aware feature self=distillation
+
+# etc..
+
+Learning Helpful Inductive Biases from Self-Supervised Pretraining
